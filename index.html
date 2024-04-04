@@ -4,34 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="src/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Mono&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
     <title>SkyScout App</title>
 </head>
 
 <body>
-    <header>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
 
-    </header>
-    <main>
-        <div>
-            <h1>Midrand</h1>
-            <p>
-                Tuesday 14:49, scattered clouds
-                <br />
-                Humidity: 66%, Wind: 3.13km/h
-            </p>
+    <body>
+        <div class="weather-app">
+            <img src="src/images/icon.png" class="logo" />
+            <header>
+                <form class="search-form">
+                    <input type="search" placeholder="Enter a city.." required class="search-input" />
+                    <input type="submit" value="Search" class="search-button" />
+                </form>
+            </header>
+
+            <main>
+                <div class="weather-app-data">
+                    <div>
+                        <h1 class="weather-app-city">Midrand</h1>
+                        <p class="weather-app-details">
+                            Tuesday 14:49, scattered clouds
+                            <br />
+                            Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+                        </p>
+                    </div>
+                    <div class="weather-app-temperature-container">
+                        <div class="weather-app-icon">🌤️</div>
+                        <div class="weather-app-temperature">12</div>
+                        <div class="weatehr-app-unit">°C</div>
+                    </div>
+                </div>
+            </main>
+            <footer>This project was coded by
+                <a href="https://github.com/Gracia-Gwati" target="blank">Gracia Gwati</a>
+                and is on <a href="https://github.com/Gracia-Gwati/SkyScout" target="blank">GitHub</a>
+                and is hosted on <a href="https://skyscout.netlify.app/" target="blank">Netlify</a>
+
+            </footer>
         </div>
-        <div>🌤️ 23°C</div>
-
-    </main>
-    <h1>Welcome to SkyScout App</h1>
-    <footer>This project was coded by
-        <a href="https://github.com/Gracia-Gwati" target="blank">Gracia Gwati</a>
-        and is on <a href="https://github.com/Gracia-Gwati/SkyScout" target="blank">GitHub</a>
-        and is hosted on <a href="https://skyscout.netlify.app/" target="blank">Netlify</a>
-
-    </footer>
-</body>
+    </body>
 
 </html>
